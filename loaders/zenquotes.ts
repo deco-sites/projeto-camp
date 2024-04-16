@@ -9,7 +9,7 @@ export interface Prop {
 export default async function zenquotes(
   prop: Prop,
   _req: Request,
-  _ctx: unknown
+  _ctx: unknown,
 ): Promise<Quotes> {
   const quantity = prop.quantity ?? 1;
   const promises = Array.from({ length: quantity }).map(() =>
