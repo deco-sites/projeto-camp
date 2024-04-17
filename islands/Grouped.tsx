@@ -1,16 +1,17 @@
-import { effetc, signal } from "@preact/signals";
+import { effect, signal } from "@preact/signals";
+import { userCount } from "deco-sites/projeto-camp/sdk/userCount.ts";
 
 export interface Person {
   firstName: string;
   lastName: string;
 }
 
-const person = signal<Personal>({
+const person = signal<Person>({
   firstName: "John",
   lastName: "Doe",
 });
 
-effetc(() => {
+effect(() => {
   console.log("Grouped Lastname", person.value.lastName);
 });
 
