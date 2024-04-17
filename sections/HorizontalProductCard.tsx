@@ -4,6 +4,7 @@ import { AppContext } from "deco-sites/projeto-camp/apps/site.ts";
 import Image from "apps/website/components/Image.tsx";
 import Loading from "deco-sites/projeto-camp/components/daisy/Loading.tsx";
 import { LoadingFallback } from "deco-sites/projeto-camp/sections/Product/ProductDetails.tsx";
+import VoteProduct from "deco-sites/projeto-camp/islands/VoteProduct.tsx";
 
 export interface ProductDetail {
   image: ImageWidget;
@@ -86,6 +87,7 @@ export default function HorizontalProductCard(prop: Props) {
                   class="w-full md:w-36 rounded"
                   width={144}
                 />
+                <VoteProduct />
               </div>
               <div class="flex-1 flex justify-center items-center">
                 <h3>{item.title}</h3>

@@ -8,20 +8,20 @@ export default function Counter() {
     setCount(count + 1);
   };
 
-  useEffect(() => {
-    alert("increment");
-  }, [count]);
+  // useEffect(() => {
+  //   alert("increment");
+  // }, [count]);
 
-  const double = useMemo(() => {
-    console.log("calculete double");
-    return number * 2;
-  }, [number]);
+  // const double = useMemo(() => {
+  //   console.log("calculete double");
+  //   return number * 2;
+  // }, [number]);
 
   return (
     <div class="p-4 rounded-xl border">
       <h2 class="text-2xl font-bold">useState hooks</h2>
       <p>Você clicou {count} vezes</p>
-      <p>O valor dobrado é: {double}</p>
+      {/* <p>O valor dobrado é: {double}</p> */}
       <button class="btn" onClick={increment}>
         Clique Aqui
       </button>

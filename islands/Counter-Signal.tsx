@@ -7,10 +7,6 @@ export default function CounterSignal() {
     count.value++;
   };
 
-  effect(() => {
-    alert("Você clicou " + count.value + " vezes");
-  });
-
   return (
     <div class="p-4 rounded-xl border">
       <h2 class="text-2xl font-bold">useSignal hooks</h2>
